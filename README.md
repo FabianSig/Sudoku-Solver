@@ -7,5 +7,7 @@ Ein Simpler Sudoku-Löser mit Eingabefunktion.
 STEUERUNG:
 
 Mauszeiger: Auswählen des Feldes
+
 1-9: Eingabe
+
 'r' : Reset (ganzens Spielfeld auf "0" setzen)
