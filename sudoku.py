@@ -50,8 +50,8 @@ def loesen():
 py.init()
 screen = py.display.set_mode((540, 540))
 py.display.set_caption("Siggi's Sodokulöser")
-base_font = py.font.Font(None, 64)
-base_font_small = py.font.Font(None, 42)
+base_font = py.font.Font("font/freesansbold.ttf", 56)
+
 
 while True:
     py.Surface.fill(screen, "white")
@@ -80,7 +80,7 @@ while True:
             text = str(feld[y][x])
 
             text_surface1 = base_font.render(text, True, "black")
-            screen.blit(text_surface1,(y*60 +17,x*60 +10))
+            screen.blit(text_surface1,(y*60+16, x*60-5))
 
 
     for event in py.event.get():
@@ -94,9 +94,6 @@ while True:
                 for x in range(9):
                     for y in range(9):
                         text = str(feld[y][x])
-
-                        text_surface1 = base_font.render(text, True, "black")
-                        screen.blit(text_surface1, (y * 60 + 17, x * 60 + 10))
 
             #lässt nur Zahleneingabe zu
             elif event.key == py.K_0 or event.key == py.K_1 or event.key == py.K_2 or event.key == py.K_3 or event.key == py.K_4 or event.key == py.K_5 or event.key == py.K_6 or event.key == py.K_7 or event.key == py.K_8 or event.key == py.K_9:
