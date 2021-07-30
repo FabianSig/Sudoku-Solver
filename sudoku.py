@@ -98,7 +98,7 @@ while True:
                         text = str(feld[y][x])
 
             #lässt nur Zahleneingabe zu
-            elif event.key == py.K_0 or event.key == py.K_1 or event.key == py.K_2 or event.key == py.K_3 or event.key == py.K_4 or event.key == py.K_5 or event.key == py.K_6 or event.key == py.K_7 or event.key == py.K_8 or event.key == py.K_9:
+            elif event.key == py.K_1 or event.key == py.K_2 or event.key == py.K_3 or event.key == py.K_4 or event.key == py.K_5 or event.key == py.K_6 or event.key == py.K_7 or event.key == py.K_8 or event.key == py.K_9:
                 for i in range(9):
                     for j in range(9):
                         if ((py.mouse.get_pos()[0] // 60), (py.mouse.get_pos()[1] // 60)) == (j, i):
@@ -116,12 +116,10 @@ while True:
                     [0, 0, 0, 0, 0, 0, 0, 0, 0],
                     [0, 0, 0, 0, 0, 0, 0, 0, 0]
                 ]
-            #jede andere tase setzt das Feld zurück
-            else:
+            #setzt das ausgeählte Feld auf 0
+            elif event.key == py.K_0:
                 for i in range(9):
                     for j in range(9):
                         if ((py.mouse.get_pos()[0] // 60), (py.mouse.get_pos()[1] // 60)) == (j, i):
                             feld[j][i] = 0
-
-
     py.display.update()
