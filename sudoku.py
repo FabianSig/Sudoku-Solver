@@ -51,7 +51,7 @@ py.init()
 programIcon = py.image.load('pictures/sudoku.ico')
 py.display.set_icon(programIcon)
 screen = py.display.set_mode((540, 540))
-py.display.set_caption("Siggi's Sodokulöser")
+py.display.set_caption("Siggi's Sudokulöser")
 base_font = py.font.Font("font/freesansbold.ttf", 56)
 
 
