@@ -14,4 +14,4 @@ cursor: Enables each field for input
 
 1-9: Input for each number
 
-'r' : Reset (sets the whole gird to "0" )
+'r' : Reset (sets the whole grid to "0" )
